@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f8fafc;
+
+  padding: 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: white;
+  border-radius: 20px;
+
+  padding: 40px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+.input-section {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.input-section input {
+  flex: 1;
+  height: 52px;
+
+  padding: 0 18px;
+
+  border-radius: 10px;
+
+  border: 1px solid #d1d5db;
+}
+
+.input-section button {
+  width: 140px;
+  height: 52px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.input-section button:hover {
+  transform: translateY(-2px);
+}
+
+.dashboard {
+  margin-top: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.short-url {
+  font-size: 20px;
+
+  padding: 16px;
+}
+
+.short-url a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.actions button {
+  flex: 1;
+
+  height: 42px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.metric {
+  font-size: 15px;
+}
+
+.metric strong {
+  font-size: 18px;
+}
+
+.analytics .metric {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.url-box {
+  margin-top: 15px;
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+}
