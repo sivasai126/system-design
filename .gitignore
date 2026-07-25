@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+*.class
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.local
+*.env
+
+# Logs
+*.log
